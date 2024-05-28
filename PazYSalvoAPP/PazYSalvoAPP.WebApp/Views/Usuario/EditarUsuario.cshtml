@@ -1,0 +1,40 @@
+﻿﻿@using PazYSalvoAPP.Models;
+
+@model PazYSalvoAPP.WebApp.Models.ViewModels.UsuarioViewModel
+
+@{
+}
+
+<h2>Editar usuario</h2>
+<div class="frmContainer">
+    <form method="post" asp-action="ActualizarUsuario" asp-controller="Usuario" id="frmEditarUsuario" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+        </div>
+
+        <div class="form-group">
+            <label for="PersonaId">PersonaId</label>
+            <input type="number" class="form-control" id="PersonaId" name="PersonaId" value="@(Model.PersonaId)">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="NombreUsuario">NombreUsuario</label>
+            <input type="text" class="form-control" id="NombreUsuario" name="NombreUsuario" value="@(Model.NombreUsuario)">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="Contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="Contrasena" name="Contrasena" value="@(Model.Contrasena)">
+        </div>
+        <br />
+        
+
+        <br />
+
+        <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="@Url.Action("Index", "Usuario")">Volver</a>
+            <button type="submit" class="btn btn-primary" id="btnActualizarUsuario">Actualizar</button>
+        </div>
+    </form>
+</div>

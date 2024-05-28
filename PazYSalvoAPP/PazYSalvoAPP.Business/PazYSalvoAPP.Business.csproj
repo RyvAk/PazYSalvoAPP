@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PazYSalvoAPP.Data\PazYSalvoAPP.Data.csproj" />
+    <ProjectReference Include="..\PazYSalvoAPP.Models\PazYSalvoAPP.Models.csproj" />
+  </ItemGroup>
+
+</Project>

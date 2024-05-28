@@ -1,0 +1,135 @@
+﻿﻿@using PazYSalvoAPP.Models;
+
+@model IEnumerable<PazYSalvoAPP.WebApp.Models.ViewModels.ClienteViewModel>
+
+@{
+}
+
+
+<h2>Administrador de clientes</h2>
+
+<div class="container"
+     id="facturaContainer">
+
+    <p class="descripcion">
+        Este administrador nos permite visualizar y gestionar todo lo referente a los clientes del negocio.
+    </p>
+
+    <div class="opciones-container">
+        <a class="btn btn-primary btn-sm" id="btnVerClientes">Ver clientes</a>
+        <a class="btn btn-success btn-sm visually-hidden" id="btnNuevoCliente">Nuevo cliente</a>
+    </div>
+
+    <div id="tblListaDeClientes">
+    </div>
+</div>
+
+@*MODAL*@
+<div class="modal-container">
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form asp-action="AgregarCliente" asp-controller="Cliente" id="frmModalCliente">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" id="Id" name="Id">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PersonaId">PersonaId</label>
+                            <input type="number" class="form-control" id="PersonaId" name="PersonaId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="RolId">RolId</label>
+                            <input type="number" class="form-control" id="RolId" name="RolId" required>
+                        </div>
+                        
+
+
+                        <br />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="btnActualizarCliente">Agregar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+@*FIN MODAL*@
+
+
+
+@section Scripts {
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btnVerClientes").click(async function () {
+                const url = "@Url.Action("ListarClientes", "Cliente")";
+                const response = await $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "html",
+                });
+
+                $("#tblListaDeClientes").html(response);
+                $("#btnVerClientes").hide();
+                $("#btnNuevoCliente").removeClass("visually-hidden"); // visually-hidden
+            });
+
+            $("#btnNuevoCliente").click(function () {
+                mostrarModal();
+            });
+
+            $("#btnActualizarCliente").click(async function () {
+                const url = "@Url.Action("AgregarClientes", "Cliente")";
+                const $formulario = $('#frmModalCliente'); // captura contenido form
+                var cliente = {
+                    //id: $('#id').val(),
+                    personaId: $formulario.find('#PersonaId').val(),
+                    rolId: $formulario.find('#RolId').val(),
+      
+
+                };
+                //console.log(factura);
+                const response = await $.ajax({
+                    url: url,
+                    method: "post",
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(cliente), // Serializa a JSON
+                    success: function () {
+                        alert("Cliente agregado con éxito");
+                        $("#modal").modal("hide");
+                    },
+                    error: function (jqxhr, textstatus, errorthrown) {
+
+                        console.error("error adding invoice:", textstatus, errorthrown);
+
+                        alert("error! no se agregó el cliente");
+                        $("#modal").modal("hide");
+                    },
+                });
+
+            });
+
+        });
+
+        function mostrarModal() {
+            $("#tituloModal").text("Nuevo Cliente");
+            $("#frmModalCliente").trigger("reset");
+            $("#modal").modal("show");
+        }
+
+    </script>
+
+}

@@ -1,0 +1,43 @@
+﻿@*@model IEnumerable<PazYSalvoAPP.WebApp.Models.ViewModels.FacturaViewModel>*@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<hr />
+<div class="container">
+    
+    <table class="table table-striped" id="tblFacturas">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Saldo</th>
+                <th>Servicio</th>
+                <th>Medio de pago</th>
+                <th>Estado</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>         
+            @foreach(var item in Model)
+            {
+                
+                <tr>
+                        <th>@item.ClienteId</th>
+                        <td>@item.Saldo</td>
+                        <td>@item.ServicioAdquiridoId</td>
+                        <td>@item.MedioDePagoId</td>
+                        <td>@item.EstadoId</td>
+                        <td>
+                            <a class="btn btn-info btn-sm btnEditarFactura" href="@Url.Action("EditarFacturas", "Factura", new { id = item.Id })">Editar</a>
+                            <a class="btn btn-warning btn-sm disabled">Eliminar</a>
+                        </td>
+                </tr>
+            }
+            
+            
+        </tbody>
+    </table>
+</div>
+

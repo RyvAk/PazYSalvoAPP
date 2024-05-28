@@ -1,0 +1,43 @@
+﻿@using PazYSalvoAPP.Models;
+
+@model PazYSalvoAPP.WebApp.Models.ViewModels.ServicioViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h2>Editar Servicio</h2>
+<div class="frmContainer">
+    <form method="post" asp-action="ActualizarServicio" asp-controller="Servicio" id="frmEditarServicio" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+        </div>
+
+        <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" value="@(Model.Nombre)">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="Descripcion">Descripción</label>
+            <input type="text" class="form-control" id="Descripcion" name="Descripcion" value="@(Model.Descripcion)">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="Precio">Precio</label>
+            <input type="text" class="form-control" id="Precio" name="Precio" value="@(Model.Precio)">
+        </div>
+        <br />
+        
+        <br />
+
+        <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="@Url.Action("Index", "Servicio")">Volver</a>
+            <button type="submit" class="btn btn-primary" id="btnActualizarServicio">Actualizar</button>
+        </div>
+    </form>
+</div>

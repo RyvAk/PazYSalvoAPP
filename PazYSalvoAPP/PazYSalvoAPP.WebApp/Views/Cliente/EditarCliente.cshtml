@@ -1,0 +1,38 @@
+﻿﻿@using PazYSalvoAPP.Models;
+
+@model PazYSalvoAPP.WebApp.Models.ViewModels.ClienteViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h2>Editar Cliente</h2>
+<div class="frmContainer">
+    <form method="post" asp-action="ActualizarCliente" asp-controller="Cliente" id="frmEditarCliente" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+        </div>
+
+        <div class="form-group">
+            <label for="PersonaId">PersonaId</label>
+            <input type="number" class="form-control" id="PersonaId" name="PersonaId" value="@(Model.PersonaId)">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="RolId">RolId</label>
+            <input type="number" class="form-control" id="RolId" name="RolId" value="@(Model.RolId)">
+        </div>
+        <br />
+
+        <br />
+
+        <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="@Url.Action("Index", "Cliente")">Volver</a>
+            <button type="submit" class="btn btn-primary" id="btnActualizarCliente">Actualizar</button>
+        </div>
+    </form>
+</div>

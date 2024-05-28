@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PazYSalvoAPP.WebApp
+build_property.RootNamespace = PazYSalvoAPP.WebApp
+build_property.ProjectDir = C:\Users\john\Desktop\PazYSalvoAPP-john\PazYSalvoAPP\PazYSalvoAPP\PazYSalvoAPP\PazYSalvoAPP.WebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\john\Desktop\PazYSalvoAPP-john\PazYSalvoAPP\PazYSalvoAPP\PazYSalvoAPP\PazYSalvoAPP.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Cliente/EditarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXJDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Cliente/_ListadoDeCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfTGlzdGFkb0RlQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Estado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Estado/_ListadoDeEstado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXF9MaXN0YWRvRGVFc3RhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Factura/EditarFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxFZGl0YXJGYWN0dXJhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Factura/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Factura/_ListadoDeFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxfTGlzdGFkb0RlRmFjdHVyYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/MediosDePago/EditarMediosDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9zRGVQYWdvXEVkaXRhck1lZGlvc0RlUGFnby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/MediosDePago/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9zRGVQYWdvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/MediosDePago/_ListadoDeMediosDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9zRGVQYWdvXF9MaXN0YWRvRGVNZWRpb3NEZVBhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Pago/EditarPago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xFZGl0YXJQYWdvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Pago/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Pago/_ListadoDePagos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xfTGlzdGFkb0RlUGFnb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Persona/EditarPersona.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxFZGl0YXJQZXJzb25hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Persona/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Persona/_ListadoDePersona.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxfTGlzdGFkb0RlUGVyc29uYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Role/EditarRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0YXJSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Role/_ListadoDeRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxfTGlzdGFkb0RlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Servicio/EditarServicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cRWRpdGFyU2VydmljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Servicio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Servicio/_ListadoDeServicios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cX0xpc3RhZG9EZVNlcnZpY2lvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Shared/_ListadoDeMediosDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaXN0YWRvRGVNZWRpb3NEZVBhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Usuario/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Usuario/_ListadoDeUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xfTGlzdGFkb0RlVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/john/Desktop/PazYSalvoAPP-john/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP/PazYSalvoAPP.WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cpppvvypvy

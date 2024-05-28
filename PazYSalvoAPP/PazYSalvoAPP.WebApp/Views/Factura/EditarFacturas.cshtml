@@ -1,0 +1,123 @@
+﻿﻿@using PazYSalvoAPP.Models;
+@model PazYSalvoAPP.WebApp.Models.ViewModels.FacturaViewModel
+
+@{
+    var saldoActual = ViewBag.Saldo;
+}
+
+<h2>Editar factura</h2>
+<div class="frmContainer">
+    <form method="post" asp-action="ActualizarFacturas" asp-controller="Factura" id="frmEditarFactura" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="Id" name="Id" value="@Model.Id">
+        </div>
+
+        <div class="form-group">
+            <label for="Saldo">Saldo</label>
+            <input type="number" class="form-control" id="Saldo" name="Saldo" value="@(saldoActual)">
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="ClienteId">Cliente</label>
+            <select class="form-select" id="ClienteId" name="ClienteId">
+                @foreach (var cliente in ViewBag.Clientes as List<Cliente>)
+                {
+                    <option value="@cliente.Id">@cliente.Id</option>
+                }
+            </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="ServicioAdquiridoId">Servicio Adquirido</label>
+            <select class="form-select" id="ServicioAdquiridoId" name="ServicioAdquiridoId">
+                <option selected value="">@(Model.ServicioAdquiridoId)</option>
+                @foreach (var servicio in ViewBag.servicios as List<Servicio>)
+                {
+                    <option value="@((servicio.Id != null) ? servicio.Id : Model.ServicioAdquiridoId)">@servicio.Nombre</option>
+                }
+            </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="MedioDePagoId">Medio de Pago</label>
+            <select class="form-select" id="MedioDePagoId" name="MedioDePagoId">
+                <option selected value="">@(Model.MedioDePagoId)</option>
+                @foreach (var medio in ViewBag.mediosDePago as List<MediosDePago>)
+                {
+                    <option value="@((medio.Id != null) ? medio.Id : Model.MedioDePagoId)">@medio.Nombre</option>
+                }
+            </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="EstadoId">Estado</label>
+            <select class="form-select" id="EstadoId" name="EstadoId">
+                <option selected value="">@(Model.EstadoId)</option>
+                @foreach (var estado in ViewBag.estados as List<Estado>)
+                {
+                    <option value="@((estado.Id != null) ? estado.Id : Model.EstadoId)">@estado.Nombre</option>
+                }
+            </select>
+        </div>
+        <br />
+
+        <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="@Url.Action("Index", "Factura")">Volver</a>
+            <button type="submit" class="btn btn-primary" id="btnActualizarFactura">Actualizar</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        //$(document).ready(function () {
+        //    $('#btnActualizarFactura').on('click', async function () {
+        //        // Obtener la URL de la acción del controlador
+        //        const url = "@Url.Action("ActualizarFacturas", "Factura")";
+
+        //        // Crear un objeto FormData con los datos del formulario
+        //        const formData = new FormData($('#frmEditarFactura')[0]);
+
+        //        $('#frmEditarFactura input, #frmEditarFactura select').each(function () {
+        //            // Verificar si el campo está vacío
+        //            if (!$(this).val()) {
+        //                // Obtener el valor del modelo correspondiente
+        //                const modelName = $(this).attr('name');
+        //                const modelValue = "@Model." + modelName;
+
+        //                // Asignar el valor del modelo al campo del formulario
+        //                $(this).val(modelValue);
+        //            }
+        //        });
+
+        //        try {
+        //            // Enviar la solicitud AJAX al servidor
+        //            const response = await $.ajax({
+        //                url: url,
+        //                method: "POST",
+        //                data: formData,
+        //                processData: false,
+        //                contentType: false,
+        //                success: function (result) {
+        //                    if (result.success) {
+        //                        alert(result.message);
+        //                    } else {
+        //                        alert(result.message);
+        //                    }
+        //                },
+        //                error: function () {
+        //                    alert("Error al actualizar la factura");
+        //                }
+        //            });
+        //        } catch (error) {
+        //            console.error(error);
+        //        }
+        //    });
+        //});
+    </script>
+}

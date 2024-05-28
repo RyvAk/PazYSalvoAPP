@@ -1,0 +1,46 @@
+﻿﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h3>Listado de Personas</h3>
+
+
+<hr />
+<div class="container">
+
+    <table class="table table-striped" id="tblPersonas">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Telefono</th>
+                <th>CorreoElectronico</th>
+                <th>DocumentoIdentificacion</th>
+
+
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <th>@item.Nombres</th>
+                    <td>@item.Telefono</td>
+                    <td>@item.CorreoElectronico</td>
+                    <td>@item.DocumentoIdentificacion</td>
+                   
+
+                    <td>
+                        <a class="btn btn-info btn-sm btnEditarPersona" href="@Url.Action("EditarPersona", "Persona", new { id = item.Id })">Editar</a>
+                        <a class="btn btn-warning btn-sm disabled">Eliminar</a>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>
